@@ -15,6 +15,6 @@ public class IndirizziBean {
 
     private String descrizione;
 
-    private AnagraficaBean anagraficaBean;
+    private AnagraficaBean anagrafica;
 
 }

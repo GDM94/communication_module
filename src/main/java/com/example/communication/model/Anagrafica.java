@@ -3,6 +3,7 @@ package com.example.communication.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -15,8 +16,10 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class Anagrafica implements Serializable {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long idana;
 
     @Column(name="nome", nullable = false)

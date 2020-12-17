@@ -4,6 +4,7 @@ package com.example.communication.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -17,8 +18,10 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class RecapitiTelefonici implements Serializable {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long idreca;
 
     @Column(name="idana", nullable = false)

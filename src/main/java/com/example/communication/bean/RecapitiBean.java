@@ -17,5 +17,5 @@ public class RecapitiBean {
 
     private String numero_recapito;
 
-    private AnagraficaBean anagraficaBean;
+    private AnagraficaBean anagrafica;
 }
