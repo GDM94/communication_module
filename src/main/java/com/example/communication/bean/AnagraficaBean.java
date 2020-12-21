@@ -14,7 +14,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @RedisHash(value = "anagrafica")
-public class AnagraficaBean {
+public class AnagraficaBean implements Serializable{
     @Id
     @Indexed
     private Long idana;
